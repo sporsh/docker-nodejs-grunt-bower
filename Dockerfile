@@ -1,6 +1,7 @@
 FROM sporsh/nvm
 MAINTAINER  Geir Sporsheim <geir.sporsheim@gmail.com>
 
+USER nvm
 
 # Install Node.js
 RUN     echo 'nvm install v0.11.14' | bash -l
