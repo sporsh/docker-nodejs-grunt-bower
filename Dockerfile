@@ -1,11 +1,12 @@
 FROM sporsh/nvm
 MAINTAINER  Geir Sporsheim <geir.sporsheim@gmail.com>
 
+# Make sure to install using nvm user
 USER nvm
 
 # Install Node.js
-RUN     echo 'nvm install v0.11.14' | bash -l
-RUN     echo 'nvm alias default v0.11.14' | bash -l
+RUN     echo 'nvm install 0.11' | bash -l
+RUN     echo 'nvm alias default 0.11' | bash -l
 
 # Install bower
 RUN     echo 'npm install -g bower' | bash -l
